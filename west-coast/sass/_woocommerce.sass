@@ -1,0 +1,347 @@
+@import "vars"
+
+#woocommerce-wrapper
+	margin-top: 100px
+	@media (max-width: $md)
+		margin-top: 60px
+
+#main 
+	/*My custom*/
+	.woocommerce-breadcrumb
+		margin-top: 50px
+		@media (max-width: $md)
+			margin-top: 30px
+	.product
+		margin-top: 30px
+		@media (max-width: $md)
+			margin-top: 20px		
+	.entry-summary
+		h2
+			margin-bottom: 1em
+		h3
+			color: $primary
+		ul
+			list-style: none
+			padding: 0
+			margin: 0
+			line-height: 1.15
+			margin-bottom: 1em
+			li
+				margin: 0
+				padding: 0
+				&::before
+					content: '\f0a9'
+					display: inline-block
+					font-family: FontAwesome
+					margin-right: .5em
+					color: $primary
+		img
+
+	.woocommerce-tabs .tabs.wc-tabs
+		display: none
+
+	.product .product_title.entry-title
+		color: $primary
+		font-size: 48px
+		font-weight: 300
+
+
+	.product-single-dimensions
+		font-weight: 300
+		margin-top: 1em
+		margin-bottom: 1em
+		strong
+			font-weight: 500
+	.product-single-sizing
+		.circle
+			width: 100%
+			padding-top: 100%
+			background: $primary
+			border-radius: 50%
+			position: relative
+			@media (max-width: $md)
+				margin-top: 15px
+				// width: 75%
+				// padding-top: 75%														
+			.abs-circle-holder
+				position: absolute
+				top: 15px
+				bottom: 15px
+				left: 15px
+				right: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				flex-direction: column
+				text-align: center
+				line-height: 1
+				color: black
+				@media (max-width:$md)
+					position: absolute
+				.content-holder
+					font-weight: 500
+					font-size: 16px
+				.icon
+					margin-top: 15px
+					img
+						overflow: hidden
+						&.home-trailer
+							width: 80px
+							max-width: 80px
+						&.home-bin
+							width: 35px
+							max-width: 35px	
+
+
+	.woocommerce-product-gallery__image
+		border-top-left-radius: 30px
+		border-top-right-radius: 30px
+		overflow: hidden
+	.woocommerce-product-details__short-description
+		margin-top:	30px
+		//margin-bottom:	30px
+	.product-image-instant-quote-holder
+		background: $secondary-300
+		padding: 30px
+		border-bottom-left-radius: 30px
+		border-bottom-right-radius: 30px
+		.title
+			font-size: 30px
+			font-weight: bold
+			color: $primary
+		.desc
+			font-weight: 300
+			margin-top: 10px
+			margin-bottom: 10px
+		.product-price-holder
+			background: #161616
+			padding: 10px 20px
+			border: 4px dashed $primary
+			border-radius: 20px
+			font-size: 36px
+			font-weight: bold
+			.inc-gst
+				display: inline-block
+				font-size: 14px
+				font-weight: 500
+
+/* hide add to cart button on single product, product-image.php / class has been added to variale.php*/
+.hide-right-side-variations
+	display: none
+.woocommerce-variation-price
+	background: #161616
+	padding: 10px 20px
+	border: 4px dashed $primary
+	border-radius: 20px
+	font-size: 36px
+	font-weight: bold
+	margin-bottom: 15px
+	.price .woocommerce-Price-amount
+		color: white
+	.inc-gst
+		display: inline-block
+		font-size: 14px
+		font-weight: 500	
+
+.single_add_to_cart_button
+	font-size: 24px
+	font-weight: bold
+	text-transform: uppercase
+	color: black
+	background: $primary
+	border-radius: none
+	border: none
+	padding: 15px
+	text-align: center
+	display: block
+	width: 100%
+	border-radius: 15px
+	margin-bottom: 15px
+
+
+#single-product-autocomplete
+	.input-group
+		display: flex
+		position: relative
+		i
+			position: absolute
+			top: 50%
+			left: 12px
+			color: black
+			transform: translateY(-50%)
+		input
+			width: 100%
+			color: black
+			border-radius: 15px		
+			border: 0px
+			outline: none
+			padding: .5em .5em .5em 2em
+			&.active
+				border-radius: 0
+				border-top-left-radius: 15px
+				border-top-right-radius: 15px	
+.woocommerce div.product form.cart .variations
+	margin: 1em
+
+#single-product-autocomplete-list,
+#header-product-autocomplete-list
+	background: white
+	border-bottom-left-radius: 15px
+	border-bottom-right-radius: 15px
+	overflow: hidden
+	list-style: none
+	padding: 0
+	margin: 0
+	&#header-product-autocomplete-list
+		position: absolute
+		top: 100%
+		right: 0
+		left: 0
+		margin-top: -5px
+		z-index: 1000		
+	li
+		display: block
+		a
+			display: block
+			color: black
+			padding: .25em .5em
+			border-bottom: 1px solid rgba(black,.1)
+			&:hover
+				background: rgba(black,.025)
+
+.related.products
+	clear: both
+	h2
+		color: $primary
+		margin-bottom: .5em
+	img
+		border-radius: 30px
+
+/* Custom Shop (archive-product.php) page*/
+.post-type-archive.post-type-archive-product.theme-west-coast.woocommerce.woocommerce-page
+	.west-coast-shop
+		.woocommerce-notices-wrapper
+			float: left
+		.woocommerce-result-count
+		.woocommerce-ordering
+			float: right
+		.columns-3
+			display: flex
+			flex-direction: row
+			.product.type-product
+				margin-right: 1em
+				.woocommerce-LoopProduct-link.woocommerce-loop-product__link img
+					border-radius: 15px
+
+
+
+/* Customizing Checkout page */
+.select2-dropdown
+	border: 3px solid $secondary-100
+	border-radius: 15px
+	padding: .5 1em
+	height: auto
+.select2-container
+	color: black
+.woocommerce-checkout	
+	form .form-row label
+		line-height: 1.5
+	.woocommerce table.shop_table
+		border: none		
+	#main
+		background: white
+		color: black
+		border-radius: 30px
+		padding: 30px
+		overflow: hidden
+		margin-bottom: 50px
+		.woocommerce-input-wrapper
+			width: 100%
+		.woocommerce-form-coupon-toggle
+			display: none
+		.woocommerce-checkout-custom-title
+			background: black
+			color: white
+			border: 2px dashed $primary
+			border-radius: 15px
+			padding: .5em 1em
+			margin-bottom: 15px
+			strong
+				margin-left: 15px
+			.fa
+				color: $primary
+				font-size: 30px
+				margin-right: 15px
+			display: flex
+			align-items: center
+		input
+			border: 3px solid $secondary-100
+			border-radius: 15px
+			padding: .5 1em
+			height: auto
+		textarea
+			border: 3px solid $secondary-100
+			border-radius: 15px
+			padding: .5 1em
+			min-height: 175px
+		.select2-container--default .select2-selection--single
+			border: 3px solid $secondary-100
+			border-radius: 15px
+			padding: .5 1em
+			height: auto
+			color: black
+		#payment #place_order, .woocommerce-page #payment #place_order
+			font-size: 24px
+			font-weight: bold
+			color: black
+			padding: .5em	2em
+			text-transform: uppercase
+		.woocommerce .form .form-row label
+			font-weight: bold
+			margin-bottom: 0
+		.select2-container--default .select2-search--dropdown .select2-search__field
+			border: 3px solid $secondary-100
+			border-radius: 15px
+			padding: .5 1em
+			height: auto
+
+.woocommerce-checkout-acceptable-waste
+	border: 3px dashed $primary
+	padding: 15px
+	border-radius: 15px
+	margin-right: 15px!important
+	margin-top: 15px
+	ul
+		list-style-type: none
+		display: inline-block
+		li
+			.fa
+				margin-right: .5em
+				color: #2C9101
+			&:before
+				display: none!important
+		&.not-allowed
+			li
+				.fa
+					color: #B80000
+#order_review_heading
+	color: black!important
+	font-size: 35px
+	font-weight: bold
+	margin-bottom: 15px
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment
+	background: white
+	border-radius: 15px
+#add_payment_method #payment ul.payment_methods, .woocommerce-cart #payment ul.payment_methods, .woocommerce-checkout #payment ul.payment_methods
+	margin: 0
+	padding: 0
+.wc_payment_methods, .payment_methods, .methods
+	li
+		&:before
+			display: none!important	
+
+#add_payment_method #payment ul.payment_methods li, .woocommerce-cart #payment ul.payment_methods li, .woocommerce-checkout #payment ul.payment_methods li
+	line-height: 1.25
+	border-top: 2px solid $primary
+	padding: 30px

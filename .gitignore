@@ -1,0 +1,10 @@
+/dev-gulp/app
+/dev-gulp/node_modules/
+/understrap-master.zip
+/understrap
+/.git/
+/**/_backstage
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store
+

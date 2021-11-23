@@ -1,0 +1,309 @@
+.home-hero-banner-top
+	margin-top: 100px
+	@media (max-width: $md)
+		margin-top: 45px	
+	.skip-bin-info-holder
+		border: 3px dashed $primary
+		background: $secondary-500
+		border-radius: 30px
+		padding: 30px
+		position: relative
+		@media (max-width: $md)
+			padding: 15px
+			border-radius: 15px			
+		.overlay-image-arrow
+			position: absolute
+			bottom: 100%
+			right: 25%
+			@media (max-width: $md)
+				display: none			
+			img
+				width: 135px
+				height: 146px				
+		.title
+			font-size: 48px
+			font-weight: bold
+			@media (max-width: $md)
+				font-size: 30px	
+			.fa
+				color: $primary
+		.desc
+			font-size: 24px
+			font-weight: 300
+			color: $primary
+			@media (max-width: $md)
+				font-size: 18 px				
+	.seven-days-skip-info
+		img
+			@media (max-width: $lg)
+				display: none
+		.title
+			display: none
+			color: $primary
+			font-size: 36px
+			margin-top: 15px
+			@media (max-width: $lg)
+				display: block
+	.home-hero-slider
+		margin-top: 50px
+		border-radius: 30px
+		overflow: hidden
+		margin-bottom: -110px
+		position: relative
+		z-index: 100
+		@media (max-width: $md)
+			margin-bottom: -175px
+			margin-top: 30px
+		.slide
+			.image
+				//width: 100%
+				height: 420px
+				background: url(../../src/img/front-page/slider-1.jpg)
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center center
+				overflow: hidden
+				@media (max-width: $lg)
+					height: 320px
+				@media (max-width: $md)
+					height: 210px
+			.entry-content
+				background: white
+				height: 110px
+				color: black
+				font-weight: bold
+				font-size: 30px
+				display: flex
+				line-height: 1.15
+				align-items: center
+				padding-bottom: 5px
+				@media (max-width: $md)
+					height: 175px
+					flex-direction: column
+					align-items: flex-start
+					justify-content: center
+				.icon
+					padding-left: 30px
+					@media (max-width: $lg)
+						display: none
+					img
+						display: block
+						min-width: 150px
+						height: auto
+				.info
+					padding-left: 30px
+					font-size: 30px
+					@media (max-width: $lg)
+						font-size: 24px		
+				.slider-nav
+					display: flex
+					margin-right: 30px
+					@media (max-width: $md)
+						margin-top: 5px
+						margin-left: 15px
+						margin-right: 0						
+					a
+						margin-left: 15px
+						margin-right: 15px
+						color: $primary
+						font-size: 48px
+
+
+				
+.home-product-info
+	//height: 1000px
+	background: $primary
+	padding-top: 200px
+	padding-bottom: 30px
+	.home-special-offer-background-overlay
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			display: block
+			top: 50px
+			bottom: 50px
+			right: 0
+			left: 0
+			background: rgba(0,0,0,.1)
+	.home-special-offer
+		background: black
+		border-radius: 15px
+		display: flex
+		padding: 50px
+		position: relative
+		z-index: 500
+		@media (max-width:$md)
+			display: block
+			padding: 30px
+		.discount-circle
+			height: 268px
+			min-width: 268px
+			border-radius: 50%
+			background: white
+			color: black
+			line-height: .9
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			position: relative
+			.abs-holder
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				display: inline-flex
+				@media (max-width:$md)
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%,-50%)
+			@media (max-width:$xl)
+				height: 156px
+				min-width: 156px
+			@media (max-width:$md)
+				margin-bottom: 15px
+				width: 100%
+				padding-bottom: 100%
+			.save
+				font-size: 48px
+				text-transform: uppercase
+			.percent
+				font-size: 100px
+				font-weight: 900
+				@media (max-width:$xl)
+					font-size: 48px
+					@media (max-width:$md)
+						font-size: 100px
+		.entry-content
+			padding-left: 50px
+			@media (max-width:$md)
+				padding-left: 0
+			.title
+				font-size: 36px
+				color: $primary
+				font-weight: bold
+				@media (max-width:$xl)
+					font-size: 30px
+			.desc
+				flex: 24px
+				font-weight: 300
+				margin-top: 30px
+				margin-bottom: 30px
+				@media (max-width:$xl)
+					font-size: 18px
+				@media (max-width:$md)
+					margin-top: 15px
+					margin-bottom: 15px
+			button
+
+	.home-products-holder
+		margin-top: 100px
+		h2
+			font-size: 48px
+			color: black
+			font-weight: bold
+			margin-bottom: 15px
+			@media (max-width: $xl)
+				font-size: 30px	
+			@media (max-width: $md)
+				font-size: 24px	
+				text-align: center
+			i
+				margin-right: .25em
+		.home-products
+			.home-product
+				border-radius: 15px
+				background: white
+				color: black
+				padding: 30px
+				position: relative
+				margin-bottom: 30px
+				@media (max-width: $xl)
+					padding-bottom: 30px
+				img
+				.title
+					font-size: 30px
+					font-weight: bold
+					margin-bottom: 15px
+					color: black!important
+				ul
+					list-style: none
+					padding: 0
+					margin: 0
+					line-height: 1.15
+					li
+						margin: 0
+						padding: 0
+						font-size: 15px
+						font-weight: 300
+						&::before
+							content: '\f0da'
+							display: inline-block
+							font-family: FontAwesome
+							margin-right: .5em
+							color: $primary
+				.home-product-circles
+					@media (max-width: $lg)
+						padding-top: 15px
+					.circle
+						width: 100%
+						padding-top: 100%
+						background: $primary
+						border-radius: 50%
+						position: relative
+						@media (max-width: $md)
+							margin-top: 15px
+							// width: 75%
+							// padding-top: 75%														
+						.abs-circle-holder
+							position: absolute
+							top: 15px
+							bottom: 15px
+							left: 15px
+							right: 15px
+							display: flex
+							justify-content: center
+							align-items: center
+							flex-direction: column
+							text-align: center
+							line-height: 1
+							@media (max-width:$md)
+								position: absolute
+							.content-holder
+								font-weight: 500
+								font-size: 16px
+							.icon
+								margin-top: 15px
+								img
+									overflow: hidden
+									&.home-trailer
+										width: 80px
+										max-width: 80px
+									&.home-bin
+										width: 35px
+										max-width: 35px
+
+				.abs-holder-button
+					position: absolute
+					bottom: 0
+					left: 50%
+					transform: translateX(-50%)
+					padding: 5px 30px
+					font-size: 18px
+					font-weight: bold
+					color: white
+					background: black
+					border-top-left-radius: 15px
+					border-top-right-radius: 15px
+					text-transform: uppercase
+					@media (max-width: $md)
+						transform: none
+						left: 30px
+						right: 30px
+						text-align: center
+						padding-left: 0px
+						padding-right: 0px
+
+

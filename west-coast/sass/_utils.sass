@@ -1,0 +1,26 @@
+@import "vars"
+.button-class
+	display: inline-block
+	color: #fff
+	border: 1px solid $primary
+	padding: .5em 1em
+	background: black
+	border-radius: 1.5em
+	font-size: 20px
+	transition: ease .25s all
+	&.outline
+		background: transparent
+		border: 1px solid black!important
+		color: black	
+	&:hover
+		background: black
+		color: $primary
+		text-decoration: none
+		&.outline
+			background: black
+			color: $primary	
+	@media (max-width: $md)
+		margin-left: 0			
+	.fa
+		color: $primary
+		margin-right: 0.5em

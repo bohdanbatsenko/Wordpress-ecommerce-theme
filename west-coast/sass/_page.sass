@@ -1,0 +1,149 @@
+@import "vars"
+
+
+/* Internal page header */
+.page-header-holder
+	margin-top: 100px
+	margin-bottom: 30px
+	@media (max-width:$md)
+		margin-top: 60px
+	h1
+		font-size: 48px
+		font-weight: 300
+		color: $primary
+/* Internal page content */
+
+#main, .entry-summary, .woocommerce-tabs
+	.entry-content
+		h2
+			margin-bottom: 1em
+		h3
+			color: $primary
+		ul
+			list-style: none
+			padding: 0
+			margin: 0
+			line-height: 1.15
+			margin-bottom: 1em
+			li
+				margin: 0
+				padding: 0
+				&::before
+					content: '\f0a9'
+					display: inline-block
+					font-family: FontAwesome
+					margin-right: .5em
+					color: $primary
+		img
+			border-radius: 15px
+			display: block
+			width: 100%
+			height: auto
+
+
+
+
+/*Page contact */
+.template-contact-us
+	font-size: 20px
+	.entry-content
+		a
+			color: white
+		
+	i
+		color: $primary
+		min-width: 40px
+	.iframe-holder
+		position: relative
+		height: 250px
+		margin-bottom: 50px
+		border-radius: 30px
+		overflow: hidden
+		iframe
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+
+	.wpcf7
+		margin-top: 50px
+		width: inherit!important
+		max-width: 500px
+		background: $primary
+		padding: 30px
+		border-radius: 30px
+		margin-bottom: 50px!important
+		a
+			color: white!important
+			i
+				color: $primary
+		h4
+			color: black
+			margin-bottom: .5em
+		@media (max-width:$lg)
+			margin-top: 30px			
+		input, textarea
+			max-width: 100%
+			border-radius: 10px
+			font-size: 18px
+			height: auto
+			background: white
+			border: none
+			outline: none
+			margin-bottom: 10px
+			&[type="submit"]
+				display: inline-block
+				width: auto
+				padding: 3px 10px
+				background: $primary-500
+				color: white		
+
+
+
+
+/* Archive page (Blog) */
+#archive-wrapper #content
+	margin-top: 100px
+
+.archive #main	
+	article.post
+		background: white
+		color: black
+		border-radius: 15px
+		overflow: hidden
+		margin-bottom: 30px
+		min-height: 500px
+		@media (max-width: $lg)
+			min-height: auto
+		.archive-post-image
+			height: 200px
+			background-size: cover
+			background-position: center
+			background-image: url(../../src/img/page-placeholder.jpg)
+		.article-body-holder
+			padding: 30px
+			.entry-title
+				font-size: 30px
+				color: black
+				font-weight: bold
+				a
+					color: black
+			.entry-content
+				font-weight: 300
+				line-height: 1.15
+				margin-top: 15px
+				margin-bottom: 15px
+			.entry-metadata
+				display: flex
+				align-items: center
+				@media (max-width: $xl)
+					display: block		
+				.date
+					font-weight: 300
+					margin-left: 15px
+					@media (max-width: $xl)
+						margin-left: 0
+						margin-top: 15px				
+					.fa
+						color: $primary
